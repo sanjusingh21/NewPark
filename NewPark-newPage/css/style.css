@@ -1,0 +1,331 @@
+
+.main-menu {
+    margin-top: 20px;
+}
+.main-menu li{
+    float: left;
+    margin: 0px 11px;
+}
+.main-menu li a{
+    color: #000;
+    font-weight: bold;
+}
+.main-menu li a:hover{
+    color: rgb(75, 75, 75);
+}
+.main-menu li a i{
+    color: #989898;
+}
+
+.header-bottom {
+    background: #01843d;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.header-bottom li{
+    position: relative;
+    display: inline-block;  
+}   
+.header-bottom li a{
+    padding: 12px 10px;
+    display: block;
+    color: #fff;
+}
+.header-bottom li:hover a{
+    background-color: #ccc;
+    color: #01843d;
+}
+.header-bottom li a::after{
+    content: "|";
+    color: #ccc;
+    position: absolute;
+    right: 0;
+}
+.header-bottom li:last-child a::after{
+    content: "";
+}
+
+
+
+.header-bottom::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* main section */
+[class*="section-"] .box, .banner{
+    position: relative;
+}
+
+.img-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.banner img, .section-1 img, .section-2 img, .section-6 img{
+    width: 100%;
+}
+.banner{
+    color: #fff;
+}
+.banner ul li{
+    display: inline;
+    font-weight: bold;
+}
+.banner .img-text{
+    top: 60%;
+}
+.bred-crums a{
+    color: #fff;
+}
+.extra-menu{
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.extra-menu ul li{
+    float: left;
+    padding: 2px 5px;
+}
+.extra-menu ul li a{
+    color: #333;
+}
+.extra-menu ul li a:hover{
+    color: #008752;
+}
+.extra-menu::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.section-1 h1{
+    color: #008752;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.section-1 .img-text, .section-2 .img-text{
+    width: 50%;
+    padding:40px;
+}
+.section-2{
+    margin-top: 20px;
+}
+
+.section-2 .img-text{
+    width: 40%;
+    color: #fff;
+}
+
+.section-2 .img-text h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.section-3 .big-text{
+    color: #008752;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.section-3 h1{
+    color: #008752;
+}
+.img-box img{
+    width: 100%;
+}
+.img-box{
+    overflow: hidden;
+    max-height: 250px;
+    position: relative;
+}
+.img-box .img-text{
+    padding: 20px;
+    font-size: 24px;
+    color: #fff;
+    top: 40%;
+}
+.img-box button{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+}
+.section-6 .img-text{
+    padding: 40px;
+    width: 50%;
+    color: #fff;
+}
+.section-6 .img-text h3, .section-6 .img-text h5{
+    color: #008752;
+    font-weight: bold;
+}
+.section-6 .img-text h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.section-6 .img-text h5{
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.section-6 button{
+    margin-top: 30px;
+}
+.section-6 li{
+    margin-top: 5px;
+}
+.seciton-7 .box-inner{
+    background-color: #008752;
+    height: 100%;
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+.seciton-7 img{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.seciton-7 a{
+    color: #fff;
+    padding-top: 5px;
+    float: left;
+}
+.seciton-7 h1{
+    padding-top: 10px;
+}
+.section-4, .section-5, .section-6, .seciton-7, footer, .footer-info{
+    margin-top: 20px;
+}
+.section-4 .box > div{
+    margin-bottom: 10px;
+}
+.list-box{
+    min-height: 200px;
+    padding: 10px;
+}
+.list-box ul li{
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0px;
+}
+.list-box ul li a{
+    color: #fff;
+}
+.list-box ul li a:hover{
+    color: rgb(230, 230, 230);
+}
+
+.footer-info{
+    padding-bottom: 10px;
+}
+main::after, footer{
+    content: "";
+    clear: both;
+    display: block;
+}
+footer, .footer-bottom{
+    background-color: #f0f0f0;
+    padding: 10px 0px;
+}
+
+.footer-top > div{
+    width: 20%;
+    float: left;
+    padding: 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.footer-top h3{
+    color: #008752;
+    text-transform: uppercase;
+}
+.footer-top ul li{
+    margin-top: 7px;
+}
+.footer-top ul li:hover{
+    color: #008752;
+    cursor: pointer;
+}
+.footer-top .social-media li{
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.footer-top .social-media li a{
+    color: #008752;
+}
+.footer-top .social-media li a:hover{
+    color: #01843d;
+}
+.footer-bottom{
+    border-top: 1px solid #008752;
+}
+.footer-bottom .left{
+    float: left;
+}
+.footer-bottom .right{
+    float: right;
+}
+.footer-bottom .box-inner{
+    float: left;
+    background-color: #f0f0f0;
+}
+.footer-bottom a{
+    color: #333;
+}
+
+.footer-bottom  a i {
+    color: #008752;
+}
+
+
+
+
+
+
+
+/* footer  */
+
+.footer-info ul li{
+   display: inline;
+}
+.footer-info ul li a{
+    color: #01843d;
+}
+.footer-info p{
+    font-size: 12px;
+    color: #454545;
+    margin-top: 4px;
+}
+
+/* extra ----------- */
+button{
+    padding: 4px 15px;
+    background-color: #008752;
+    color: #fff;
+    border: 1px solid #008752;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0b925c;
+}
+.yellow-text{
+    color: rgb(194, 191, 32);
+}
+.bg-green{
+    background-color: #01843d;
+}
+.menu-bars{
+    color: #01843d;
+    float: right;
+    font-size: 22px;
+    display: none;
+}
+.d-block{
+    display: block !important;
+}

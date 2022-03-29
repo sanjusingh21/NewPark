@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Government Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .color-green {
+            color: #00a883;
+        }
+
+        .bg-green {
+            color: #fff;
+            background-color: #00a883;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .vCenter {
+            vertical-align: center;
+        }
+
+        td {
+            padding: 5px 15px;
+            vertical-align: text-top;
+        }
+
+        td:first-child,
+        td:last-child {
+            width: 50%;
+        }
+
+        .side_heading {
+            font-size: 20px;
+        }
+
+        .list {
+            list-style: circle;
+            list-style-position: inside;
+        }
+
+        .list li {
+            margin-top: 7px;
+        }
+
+        .form_control {
+            width: 100%;
+            padding: 7px 15px;
+            border: 1px solid #92cec1;
+            min-height: 32px;
+        }
+
+        label {
+            padding-bottom: 5px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border-collapse: collapse; width: 100%; border: 1px solid #00a883; border-radius: 5px;">
+        <tr>
+            <td colspan="2">
+                <p style="float: left;">
+                    <img alt=""
+                        src="data:image/png;base64,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" />
+                </p>
+                <h3 class="color-green text-center" style="margin-top: 25px;">NON-GOVERNMENT OFFICIAL GIFT APPROVAL FORM
+                </h3>
+            </td>
+        </tr>
+        <tr class="bg-green">
+            <td colspan="2" class="side_heading">
+                Instructions
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ul class="list">
+                    <li>For all gifts offered that exceed $100 USD in value, please complete this form and
+
+                        submit it for approval as follows: EXCAL and NMIS forms to the Divisional President: NDF
+
+                        forms to the Executive Direct Reports of the Divisional President (requests made by the
+
+                        Executive Direct Reports must be submitted to the Divisional President); NRI forms to the
+
+                        General Counsel.</li>
+                    <li>
+                        For all gifts, travel and entertainment offered to Government Officials (regardless of
+
+                        amount), <a href="#">complete the Government Official Gift, Travel & Entertainment Form</a> and
+                        submit it to
+
+                        the Legal Department for approval by the General Counsel.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Status:</label>
+                <div class="form_control"></div>
+            </td>
+            <td></td>
+        </tr>
+        <tr class="bg-green">
+            <td colspan="2" class="side_heading">
+                Requester Information
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Requester Name:</label>
+                <div class="form_control"></div>
+            </td>
+            <td>
+                <label>Job Title:</label>
+                <div class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Business Division:</label>
+                <div class="form_control"></div>
+            </td>
+            <td>
+                <label>Work Location:</label>
+                <div class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Approver:</label>
+                <div class="form_control"></div>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="bg-green">
+            <td colspan="2" class="side_heading">
+                Recipient Information
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>Recipient Company:</label>
+                <div class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Recipient Name:</label>
+                <div class="form_control"></div>
+            </td>
+            <td>
+                <label>Recipient Job Title:</label>
+                <div class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>Recipient Contact Information:</label>
+                <div style="min-height: 70px;" class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>Please confirm that the Recipient is not a Government Official (as defined in Section III of
+
+                    the Business Gifts and Entertainment Policy).</label>
+                <div>
+                    <input type="radio" name="" id=""> Yes
+                    <input type="radio" name="" id="" style="margin-left: 15px;"> No
+                </div>
+            </td>
+        </tr>
+        <tr class="bg-green">
+            <td colspan="2" class="side_heading">
+                Gift Information
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Currency Type:</label>
+                <div class="form_control"></div>
+            </td>
+            <td>
+                <label>Gift Value:</label>
+                <div class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>Gift description and purpose of gift:</label>
+                <div style="min-height: 70px;" class="form_control"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>Comments:</label>
+                <div style="min-height: 70px;" class="form_control"></div>
+            </td>
+        </tr>
+        <tr class="bg-green">
+            <td colspan="2" class="side_heading">
+                Attachments:
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ul class="list" style="list-style-type: decimal;">
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
