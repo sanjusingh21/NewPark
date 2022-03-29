@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .section{
+            width: 1018px;
+            height: 800px;
+            background: url("mobile.png") no-repeat;
+            background-size: contain;
+            position: relative;
+        }
+        .section div[class*="section-"]{
+            float: left;
+            padding: 15px;
+        }
+        .section-1{
+            width: 18%;
+        }
+        .section-2{
+            width: 25.5%;
+        }
+        .section-2 ul{
+            padding-left: 20px;
+        }
+        .section-3{
+            width: 28%;
+        }
+        .section-3 ul{
+            padding-left: 34px;
+        }
+        .section-3{
+            width: 28%;
+        }
+        .section-4{
+            width: 26%;
+        }
+        .section-4 ul{
+            padding-left: 23px;
+        }
+        .section div[class*="section-"]::after{
+            clear: both;
+            display: block;
+        }
+        .section_middle{
+            position: absolute;
+            top: 38px;
+            width: 100%;
+        }
+        .section_bottom{
+            position: absolute;
+            top: 290px;
+            width: 100%;
+        }
+        h3.mob_heading{
+            margin: 0px;
+            text-align: center;
+            color: #fff;
+        }
+        h2.side_heading{
+            display: flex;
+            align-items: center;
+            height: 190px;
+            text-align: center;
+            color: #1d1d1d;
+        }
+        ul.my_ul li{
+            margin-bottom: 7px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .section_middle ul.my_ul li a{
+            /* color: #fff; */
+            color: #000;
+            transition: all 0.4s;
+        }
+        .section_bottom ul.my_ul li a{
+            color: #000;
+        }
+        .section_middle ul.my_ul li,
+        .section_bottom ul.my_ul li{
+            transition: all 0.4s;
+        }
+        .section_middle ul.my_ul li:hover,
+        .section_bottom ul.my_ul li:hover{
+            margin-left: 3px;
+        }
+        .section_middle ul.my_ul li a:hover,
+        .section_bottom ul.my_ul li a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="section_top">
+            <div class="section-1">
+            </div>
+            <div class="section-2">
+                <h3 class="mob_heading">HSEQ</h3>
+            </div>
+            <div class="section-3">
+                <h3 class="mob_heading">Technical</h3>
+            </div>
+            <div class="section-4">
+                <h3 class="mob_heading">Non-TechOther nical</h3>
+            </div>
+        </div>
+        <div class="section_middle">
+            <div class="section-1">
+                <h2 class="side_heading">New Hire Onboarding</h2>
+            </div>
+            <div class="section-2">
+               <ul class="my_ul">
+                   <li><a href="#">Keystone Safety Rules</a></li>
+                   <li><a href="#">ISO/API QMS</a></li>
+                   <li><a href="#">Emergency Mgmt</a></li>
+                   <li><a href="#">MOC</a></li>
+                   <li><a href="#">Non-Conformances</a></li>
+                   <li><a href="#">XXX</a></li>
+                   <li><a href="#">XXX</a></li>
+                   <li><a href="#">XXX</a></li>
+               </ul>
+            </div>
+            <div class="section-3">
+                <ul class="my_ul">
+                    <li><a href="#">API 13 B</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                </ul>
+            </div>
+            <div class="section-4">
+                <ul class="my_ul">
+                    <li><a href="#">Compliance </a></li>
+                    <li><a href="#">Ethics</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section_bottom">
+            <div class="section-1">
+                <h2 class="side_heading">Additional Training</h2>
+            </div>
+            <div class="section-2">
+                <ul class="my_ul">
+                    <li><a href="#">Keystone Safety Rules</a></li>
+                    <li><a href="#">ISO/API QMS</a></li>
+                    <li><a href="#">Emergency Mgmt</a></li>
+                    <li><a href="#">MOC</a></li>
+                    <li><a href="#">Non-Conformances</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                </ul>
+            </div>
+            <div class="section-3">
+                <ul class="my_ul">
+                    <li><a href="#">API 13 B</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                </ul>
+            </div>
+            <div class="section-4">
+                <ul class="my_ul">
+                    <li><a href="#">Compliance </a></li>
+                    <li><a href="#">Ethics</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                    <li><a href="#">XXX</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
